@@ -213,7 +213,7 @@ public class Game extends JPanel implements KeyListener { // declare class game 
                                 currNote.repaint(); // repaint current note
                                 if (currNote.isMissed()) { // if the current note was missed
                                     sitar.kick(); // make kick sound with sitar soundmaker
-                                    reactRect.hit(1); // have the main reaction rectange flash red
+                                    reactRect.hit(2); // have the main reaction rectange flash red
                                     lives--; // take away a life
                                     livesL.setText(Integer.toString(lives)); // update lives label
                                     if (currNote.getStage() == 0) currNote.shrink(); // if the missed note has not started shrinking, start shrinking it
