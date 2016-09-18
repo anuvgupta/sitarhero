@@ -1,10 +1,22 @@
+@font-face {
+    font-family: myCenturyGothic;
+    src: url("http://anuv.me/pocketjs/fonts/centurygothic.ttf");
+}
+
 * {
     line-height: 1.5;
 }
 
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+
 body {
-    background: url('img/DSCN0206.JPG') no-repeat center center fixed;
+    background: #EEE url('img/IMG_0276.JPG') no-repeat center center fixed;
     background-size: cover;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
 a {
@@ -21,28 +33,4 @@ code {
     padding: 0.2em 0.6em;
     border-radius: 3px;
     margin: 0;
-}
-
-.block {
-    display: table;
-    text-align: center;
-}
-.block .content {
-    display: table-cell;
-    vertical-align: middle;
-    height: auto;
-    width: auto;
-}
-
-#SitarHero {
-    width: 70%;
-    margin: 40px auto;
-    color: #333;
-    opacity: 0;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-    transition: opacity 0.3s ease;
-    -webkit-transition: opacity 0.3s ease;
-    background-color: #FBFBFB;
-    padding: 3.7%;
-    border-radius: 10px;
 }

@@ -1,19 +1,54 @@
+// generate blocks and load blockfile
+var sitarhero = Block('div', 'sitarhero');
+sitarhero
+    .add(Block('block', 'intro')
+        .add('text', 'title')
+        .add ('text', 'author')
+    )
+    .add(Block('block', 'label')
+        .add(Block('block', 1)
+            .add('text', 1)
+        )
+        .on('click', function (e) {
+            $(document.body).animate({
+                scrollTop: $('#sitarhero').offset().top + 'px'
+            }, 600);
+            e.stopPropagation();
+        })
+    )
+    .add('div', 'content')
+    .load(function (block) {
+        block.fill(document.body);
+    }, 'app', 'jQuery')
+;
+
+// display window
 $(document).ready(function () {
-    var sitarhero = $('#SitarHero');
-    // resize window handler
-    $(window).resize(function () {
-        // resize content
-        if (window.innerWidth < 800) {
-            sitarhero.css('width', '90%');
-        } else {
-            sitarhero.css('width', '75%');
-        }
-    });
+    var content = sitarhero.child('content');
     // load markdown from github readme
     $.ajax({
         url: 'https://raw.githubusercontent.com/anuvgupta/sitarhero/master/README.md',
         success: function (data) {
-            sitarhero.html(marked(data)).css('opacity', '1');
+            // resize window handler
+            $(window).resize(function () {
+                var screenshot = $("img[alt='Sitar Hero Screenshot']");
+                if (window.innerWidth < 800)
+                    content.css({
+                        width: '92.6%',
+                        borderRadius: '5px',
+                        margin: '40px auto 0 auto'
+                    });
+                else content.css({
+                    width: '75%',
+                    borderRadius: '10px',
+                    margin: '40px auto'
+                });
+                if (window.innerWidth < 550)
+                    screenshot.css('width', '95%');
+                else screenshot.css('width', 'auto');
+            });
+            var renderer = new marked.Renderer();
+            content.html(marked(data, { renderer: renderer })).css('opacity', '1');
             $(window).resize();
             var index = window.location.href.indexOf('#');
             if (index != -1) {
@@ -21,7 +56,7 @@ $(document).ready(function () {
                 if (document.getElementById(id) != null) {
                     $(document.body).animate({
                         scrollTop: $('#' + id).offset().top + 'px'
-                    }, 700);
+                    }, /* 700 */ 0);
                 }
             }
         }

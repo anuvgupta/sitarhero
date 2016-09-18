@@ -1,0 +1,56 @@
+    *
+sitarhero
+    intro
+        css
+            height 75%
+            width 100%
+            color #444
+        title
+            val Sitar Hero
+            css
+                display block
+                margin-bottom 20px
+                font 120px myCenturyGothic
+                text-transform lowercase
+        author
+            val by Anuv Gupta
+            css
+                display block
+                margin-top -40px
+                font 45px myCenturyGothic
+                text-transform lowercase
+    label
+        css
+            width 100%
+            height 70px
+            text-transform uppercase
+            margin-bottom -50px
+            z-index 0
+            position relative
+        block
+            css
+                width 200px
+                display inline-table
+                font 20px Arial
+                background-color rgba(255, 255, 255, 1)
+                border-radius 8px 8px 0 0
+                border 1px solid #DDD
+                border-bottom none
+                cursor pointer
+                color #555
+            text
+                val Explore
+    content
+        css
+            width 70%
+            margin 40px auto
+            color #333
+            opacity 0
+            transition opacity 0.3s ease
+            -webkit-transition opacity 0.3s ease
+            //background-color #FBFBFB
+            background-color rgba(255, 255, 255, 1)
+            padding 3.7%
+            border-radius 10px
+    css
+        height 100%
