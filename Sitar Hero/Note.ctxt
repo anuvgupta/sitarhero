@@ -1,0 +1,26 @@
+#BlueJ class context
+comment0.params=k\ n
+comment0.target=Note(java.lang.String,\ java.lang.String)
+comment1.params=e
+comment1.target=void\ actionPerformed(java.awt.event.ActionEvent)
+comment10.params=
+comment10.target=void\ shrink()
+comment11.params=e
+comment11.target=void\ actionPerformed(java.awt.event.ActionEvent)
+comment2.params=g
+comment2.target=void\ paintComponent(java.awt.Graphics)
+comment3.params=
+comment3.target=void\ move()
+comment4.params=
+comment4.target=boolean\ isMissed()
+comment5.params=
+comment5.target=boolean\ isOut()
+comment6.params=
+comment6.target=boolean\ isIn()
+comment7.params=y
+comment7.target=void\ setYPos(int)
+comment8.params=
+comment8.target=java.lang.String\ getNote()
+comment9.params=
+comment9.target=int\ getStage()
+numComments=12

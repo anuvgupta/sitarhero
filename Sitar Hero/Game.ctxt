@@ -1,0 +1,22 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Game()
+comment1.params=s
+comment1.target=void\ setSong(Song)
+comment2.params=
+comment2.target=void\ setComponents()
+comment3.params=g
+comment3.target=void\ paintComponent(java.awt.Graphics)
+comment4.params=
+comment4.target=void\ nullifyAll()
+comment5.params=
+comment5.target=void\ play()
+comment6.params=
+comment6.target=void\ run()
+comment7.params=e
+comment7.target=void\ keyPressed(java.awt.event.KeyEvent)
+comment8.params=e
+comment8.target=void\ keyTyped(java.awt.event.KeyEvent)
+comment9.params=e
+comment9.target=void\ keyReleased(java.awt.event.KeyEvent)
+numComments=10

@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.params=x\ y\ w\ h\ s
+comment0.target=ReactionRectangle(int,\ int,\ int,\ int,\ int)
+comment1.params=e
+comment1.target=void\ actionPerformed(java.awt.event.ActionEvent)
+comment2.params=g
+comment2.target=void\ paintComponent(java.awt.Graphics)
+comment3.params=b
+comment3.target=void\ hit(int)
+numComments=4

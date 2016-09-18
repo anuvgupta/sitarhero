@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Engine()
+comment1.params=s
+comment1.target=void\ setStage(boolean)
+comment2.params=
+comment2.target=boolean\ getStage()
+comment3.params=args
+comment3.target=void\ main(java.lang.String[])
+comment4.params=ke
+comment4.target=void\ keyReleased(java.awt.event.KeyEvent)
+comment5.params=e
+comment5.target=void\ keyPressed(java.awt.event.KeyEvent)
+comment6.params=e
+comment6.target=void\ keyTyped(java.awt.event.KeyEvent)
+numComments=7
