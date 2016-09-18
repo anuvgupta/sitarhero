@@ -1,5 +1,18 @@
 # sitarhero
-Guitar Hero-like game using JavaX Swing, Java AWT, and MIDI  
+&nbsp;Music/video game using Java and MIDI Sitar  
+
+## idea
+I was inspired to design **Sitar Hero** in fourth grade, after my friends and I managed to come up with a plethora of multicultural puns. Sitar Hero being the one I found most compelling, I vowed to one day make a game similar to [Guitar Hero](https://www.guitarhero.com/game), but with the popular Indian instrument, the sitar, instead of the classic Gibson SG modeled guitar. For this project, that is what I originally intended to create; however, synchronizing an audio stream with AWT and JavaX Swing components is in fact quite an unwieldy task. Thus, I decided to make the project more authentic to the concept of *"Sitar Hero"* and have the user feel like he/she is playing a sitar.
+ - The player must hit notes on the keyboard as they reach the bottom of the screen
+    - If a note is missed, the reaction box will flash red and a kick drum sound will play
+    - If a note is hit, the reaction box will flash green and the correct sitar note will play
+ - If the player completes a song with 80% notes hit
+    - Song name and artist are revealed
+    - Edited/shortened version of song is played
+    - Player proceeds to next song
+ - If a player runs out of lives or completes with 20% notes missed
+    - Player must retry song that was failed
+ - After three songs, game won!
 
 ## instructions
  1. Install [Java 8](http://www.oracle.com/technetwork/java/javase/downloads/index.html)
@@ -34,3 +47,6 @@ Guitar Hero-like game using JavaX Swing, Java AWT, and MIDI
     - All edited by me, courtesy of SoundCloud and YouTube
 
 View full credits in [`SitarHero/README.TXT`](https://github.com/anuvgupta/sitarhero/blob/master/SitarHero/README.TXT)
+
+## disclaimer
+*Anuv Gupta and Sitar Hero take no credit for and have no association with any entities or property belonging or related to [Guitar Hero](https://www.guitarhero.com/) and [ActiVision](https://www.activision.com/). Any and all similarities or resemblances to the aforementioned entities are completely unintentional and by chance. For any issues, please contact (me@anuv.me)[mailto:me@anuv.me] by email.*
