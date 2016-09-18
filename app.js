@@ -49,6 +49,7 @@ $(document).ready(function () {
             });
             var renderer = new marked.Renderer();
             content.html(marked(data, { renderer: renderer })).css('opacity', '1');
+            sitarhero.css('opacity', '1');
             $(window).resize();
             var index = window.location.href.indexOf('#');
             if (index != -1) {
