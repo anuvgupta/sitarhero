@@ -16,6 +16,9 @@ I was inspired to design **Sitar Hero** in fourth grade, after my friends and I 
     - Player must retry song that was failed
  - After three songs, game won!
 
+## screenshot
+[![Sitar Hero Screenshot](http://anuv.me/sitarhero/img/screenshot.png)](#screenshot)
+
 ## instructions
  1. Install [Java 8](http://www.oracle.com/technetwork/java/javase/downloads/index.html)
  2. Clone/download [this](https://github.com/anuvgupta/sitarhero) repository
