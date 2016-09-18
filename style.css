@@ -2,6 +2,11 @@
     line-height: 1.5;
 }
 
+body {
+    background: url('img/DSCN0206.JPG') no-repeat center center fixed;
+    background-size: cover;
+}
+
 a {
     color: #4078c0;
 }
@@ -33,25 +38,34 @@ code {
     position: absolute;
     top: 10px;
     left: 10px;
-    font: 100px Papyrus;
     text-align: center;
     width: 55%;
-    color: #222;
+    color: #DDD;
+}
+#heading #A {
+    font: 100px Papyrus;
+}
+#heading #B {
+    font: 60px Papyrus;
+    margin-top: -40px;
 }
 
 #screenshot {
     margin: 0 0 0 auto;
     display: block;
     width: 45%;
-    margin-bottom: -45px;
+    margin-bottom: -65px;
 }
 
 #SitarHero {
     width: 70%;
-    margin: 0 auto;
+    margin: 40px auto;
     color: #333;
     opacity: 0;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     transition: opacity 0.3s ease;
     -webkit-transition: opacity 0.3s ease;
+    background-color: #EEE;
+    padding: 3.7%;
+    border-radius: 10px;
 }

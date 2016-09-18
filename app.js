@@ -1,5 +1,8 @@
 $(document).ready(function () {
     var heading = $('#heading');
+    var A = $('#heading #A');
+    var B = $('#heading #B');
+    var author = $('#heading #B');
     var screenshot = $('#screenshot');
     var sitarhero = $('#SitarHero');
     // resize window handler
@@ -7,21 +10,21 @@ $(document).ready(function () {
         // resize content
         if (window.innerWidth < 800) {
             screenshot.css('margin-right', '2%')
-                .css('margin-bottom', '-55px');
+                .css('margin-bottom', '-125px');
             sitarhero.css('width', '90%');
         } else {
             screenshot.css('margin-right', '5%')
-                .css('margin-bottom', '-105px');
-            sitarhero.css('width', '70%');
+                .css('margin-bottom', '-30%');
+            sitarhero.css('width', '75%');
         }
         // resize heading
         var imgHeight = screenshot.height();
         heading.css('height', imgHeight + 'px');
-        if (imgHeight < 250)
-            heading.css('font-size', '60px');
-        else if (imgHeight < 320)
-            heading.css('font-size', '80px');
-        else heading.css('font-size', '100px');
+        var fontsize = 100;
+        if (imgHeight < 250) fontsize = 60;
+        else if (imgHeight < 320) fontsize = 80;
+        A.css('font-size', fontsize + 'px');
+        B.css('font-size', fontsize * (3/5) + 'px');
     });
     // load markdown from github readme
     $.ajax({
