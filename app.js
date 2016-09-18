@@ -12,6 +12,15 @@ $(document).ready(function () {
         success: function (data) {
             sitarhero.html(marked(data)).css('opacity', '1');
             $(window).resize();
+            var index = window.location.href.indexOf('#');
+            if (index != -1) {
+                var id = window.location.href.substring(index + 1);
+                if (document.getElementById(id) != null) {
+                    $(document.body).animate({
+                        scrollTop: $('#' + id).offset().top + 'px'
+                    }, 700);
+                }
+            }
         }
     });
 });
