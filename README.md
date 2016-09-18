@@ -19,4 +19,18 @@ Guitar Hero-like game using JavaX Swing, Java AWT, and MIDI
  5. Play sitar hero!
 
 ## credits
-&nbsp;&nbsp;View all sources in [`SitarHero/README.TXT`](https://github.com/anuvgupta/sitarhero/blob/master/SitarHero/README.TXT)
+ - Sitar image `SitarHero/files/sitar/sitar.png`: [premierguitar.com](http://www.premierguitar.com/articles/23392-danelectro-baby-sitar-review)
+ - Sitar MIDI SoundFont `SitarHero/files/sitar/saz.SF2`: Marck Heusschen of [hammersound.net](http://www.hammersound.com/cgi-bin/soundlink.pl?action=view_category&category=Ethnic)
+ - Gifs in `SitarHero/files/sitar`
+    - `dancing.gif`: [onedio.com](https://onedio.com/haber/cirkin-goruntusu-disinda-sineklerden-nefret-etmek-icin-hakli-sebepler-385982)
+    - `rickroll.gif`: [medium.com](https://medium.com/@listenonrepeat/rickroll-the-world-but-why-c68e236c9f12)
+    - `saxroll.gif` [giphy.com](http://giphy.com/gifs/W6Tdbnqo7rFrW)
+    - `shrek.gif` [gifsoup.com](http://gifsoup.com/view/5164615/it-will-allbe-ogre-soon.html)
+ - Wav audio files
+    - All `.wav` files in
+        - `SitarHero/files/levels`
+        - `SitarHero/files/rickroll`
+        - `SitarHero/files/saymyname`
+    - All edited by me, courtesy of SoundCloud and YouTube
+
+View full credits in [`SitarHero/README.TXT`](https://github.com/anuvgupta/sitarhero/blob/master/SitarHero/README.TXT)
