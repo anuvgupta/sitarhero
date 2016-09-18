@@ -1,10 +1,27 @@
 $(document).ready(function () {
+    var heading = $('#heading');
+    var screenshot = $('#screenshot');
     var sitarhero = $('#SitarHero');
     // resize window handler
     $(window).resize(function () {
-        if (window.innerWidth < 800)
+        // resize content
+        if (window.innerWidth < 800) {
+            screenshot.css('margin-right', '2%')
+                .css('margin-bottom', '-55px');
             sitarhero.css('width', '90%');
-        else sitarhero.css('width', '70%');
+        } else {
+            screenshot.css('margin-right', '5%')
+                .css('margin-bottom', '-105px');
+            sitarhero.css('width', '70%');
+        }
+        // resize heading
+        var imgHeight = screenshot.height();
+        heading.css('height', imgHeight + 'px');
+        if (imgHeight < 250)
+            heading.css('font-size', '60px');
+        else if (imgHeight < 320)
+            heading.css('font-size', '80px');
+        else heading.css('font-size', '100px');
     });
     // load markdown from github readme
     $.ajax({

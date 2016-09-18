@@ -18,6 +18,34 @@ code {
     margin: 0;
 }
 
+.block {
+    display: table;
+    text-align: center;
+}
+.block .content {
+    display: table-cell;
+    vertical-align: middle;
+    height: auto;
+    width: auto;
+}
+
+#heading {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font: 100px Papyrus;
+    text-align: center;
+    width: 55%;
+    color: #222;
+}
+
+#screenshot {
+    margin: 0 0 0 auto;
+    display: block;
+    width: 45%;
+    margin-bottom: -45px;
+}
+
 #SitarHero {
     width: 70%;
     margin: 0 auto;
