@@ -18,7 +18,7 @@ I was inspired to design **Sitar Hero** in fourth grade, after my friends and I 
 
 ## instructions
  1. Install [Java 8](http://www.oracle.com/technetwork/java/javase/downloads/index.html)
- 2. Clone/download this repository
+ 2. Clone/download [this](https://github.com/anuvgupta/sitarhero) repository
  3. Use command line Java (recommended) or BlueJ
     - Command Line
         - Open a terminal or command prompt
