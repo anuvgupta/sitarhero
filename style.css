@@ -18,9 +18,12 @@ code {
     margin: 0;
 }
 
-#main {
+#SitarHero {
     width: 70%;
     margin: 0 auto;
     color: #333;
+    opacity: 0;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    transition: opacity 0.3s ease;
+    -webkit-transition: opacity 0.3s ease;
 }
