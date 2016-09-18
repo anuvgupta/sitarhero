@@ -49,4 +49,6 @@ I was inspired to design **Sitar Hero** in fourth grade, after my friends and I 
 View full credits in [`SitarHero/README.TXT`](https://github.com/anuvgupta/sitarhero/blob/master/SitarHero/README.TXT)
 
 ## disclaimer
-*Anuv Gupta and Sitar Hero take no credit for and have no association with any entities or property belonging or related to [Guitar Hero](https://www.guitarhero.com/) and [ActiVision](https://www.activision.com/). Any and all similarities or resemblances to the aforementioned entities are completely unintentional and by chance. For any issues, please contact (me@anuv.me)[mailto:me@anuv.me] by email.*
+*Anuv Gupta and Sitar Hero take no credit for and have no association with the respective legal owners/creators of the above SoundFont, GIF/PNG images, and WAV audio files. All credit belongs to the respectively credited entities.  
+Anuv Gupta and Sitar Hero take no credit for and have no association with any entities or property belonging or related to [Guitar Hero](https://www.guitarhero.com/) and [ActiVision](https://www.activision.com/). Any and all similarities or resemblances to the aforementioned entities are completely unintentional and by chance.*  
+For any issues or questions, please contact [me@anuv.me](mailto:me@anuv.me) by email.
