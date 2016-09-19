@@ -37,21 +37,22 @@ I was inspired to design **Sitar Hero** in fourth grade, after my friends and I 
  5. Play sitar hero!
 
 ## credits
- - Sitar image `SitarHero/files/sitar/sitar.png` [premierguitar.com](http://www.premierguitar.com/articles/23392-danelectro-baby-sitar-review)
- - Sitar MIDI SoundFont `SitarHero/files/sitar/saz.SF2` Marck Heusschen of [hammersound.net](http://www.hammersound.com/cgi-bin/soundlink.pl?action=view_category&category=Ethnic)
- - Gifs in `SitarHero/files/sitar`
+All files referenced hereinafter reside within the [`SitarHero`](https://github.com/anuvgupta/sitarhero/tree/master/SitarHero) folder.
+ - Sitar image `files/sitar/sitar.png` [premierguitar.com](http://www.premierguitar.com/articles/23392-danelectro-baby-sitar-review)
+ - Sitar MIDI SoundFont `files/sitar/saz.SF2` Marck Heusschen of [hammersound.net](http://www.hammersound.com/cgi-bin/soundlink.pl?action=view_category&category=Ethnic)
+ - Gifs in `files/sitar`
     - `dancing.gif` [onedio.com](https://onedio.com/haber/cirkin-goruntusu-disinda-sineklerden-nefret-etmek-icin-hakli-sebepler-385982)
     - `rickroll.gif` [medium.com](https://medium.com/@listenonrepeat/rickroll-the-world-but-why-c68e236c9f12)
     - `saxroll.gif` [giphy.com](http://giphy.com/gifs/W6Tdbnqo7rFrW)
     - `shrek.gif` [gifsoup.com](http://gifsoup.com/view/5164615/it-will-allbe-ogre-soon.html)
  - Wav audio files
     - All `.wav` files in
-        - `SitarHero/files/levels`
-        - `SitarHero/files/rickroll`
-        - `SitarHero/files/saymyname`
+        - `files/levels`
+        - `files/rickroll`
+        - `files/saymyname`
     - All edited by me, courtesy of SoundCloud and YouTube
 
-View full credits in [`SitarHero/README.TXT`](https://github.com/anuvgupta/sitarhero/blob/master/SitarHero/README.TXT)
+View full credits in [`README.TXT`](https://github.com/anuvgupta/sitarhero/blob/master/SitarHero/README.TXT)
 
 ## disclaimer
 *Anuv Gupta and Sitar Hero take no credit for and have no association with the legal owners/creators of the above intellectual property (ie. SoundFont, GIF/PNG images, and WAV audio files). All credit belongs to the respectively credited entities, and any other entities that claim valid legal ownership of such property. In addition, Anuv Gupta and Sitar Hero take no credit for and have no association with any entities or property belonging or related to [Guitar Hero](https://www.guitarhero.com/) and [ActiVision](https://www.activision.com/). Any and all similarities or resemblances to the aforementioned entities are completely unintentional and by chance.*  
