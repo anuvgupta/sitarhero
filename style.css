@@ -24,6 +24,7 @@ body {
 
 a {
     color: #4078c0;
+    text-align: center;
 }
 
 h1, h2 {
@@ -36,4 +37,8 @@ code {
     padding: 0.2em 0.6em;
     border-radius: 3px;
     margin: 0;
+}
+
+h1 {
+    text-align: center;
 }

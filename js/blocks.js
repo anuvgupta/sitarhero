@@ -72,7 +72,7 @@ Block('tab', function () {
         borderBottom: 'none',
         cursor: 'pointer',
         color: '#4C4C4C',
-        margin: '0',
+        margin: '0 0.5px',
         opacity: '0.6'
     })
     .add('text', 1)
@@ -80,9 +80,16 @@ Block('tab', function () {
         var siblings = block.siblings();
         for (sibling in siblings) {
             if (siblings.hasOwnProperty(sibling))
-                siblings[sibling].css('opacity', '0.6');
+                siblings[sibling].css({
+                    opacity: '0.7',
+                    border: 'none'
+                });
         }
-        block.css('opacity', '1');
+        block.css({
+            opacity: '1',
+            border: '1px solid #DDD',
+            borderBottom: 'none'
+        });
     });
     return block;
 }, function (block, data, css) {

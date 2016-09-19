@@ -1,4 +1,3 @@
-// generate blocks and load blockfile
 var sitarhero = Block('div', 'sitarhero');
 sitarhero
     .add(Block('block', 'intro')
@@ -7,12 +6,13 @@ sitarhero
     )
     .add(Block('block', 'tabs')
         .add(Block('tab', 'explore')
-            .on('click')
             .on('click', function (e) {
-                $(document.body).animate({
-                    scrollTop: $('#sitar-hero').offset().top + 'px'
-                }, 600);
-                e.stopPropagation();
+                if (e.detail.noscroll != true) {
+                    $(document.body).animate({
+                        scrollTop: $('#sitar-hero').offset().top + 'px'
+                    }, 600);
+                    e.stopPropagation();
+                }
             })
         )
         .add('tab', 'github')
@@ -59,6 +59,12 @@ sitarhero
                     )
                 )
             )
+            .add(Block('break').data(2))
+            .add(Block('div', 'footer')
+                .add('text', 'textA')
+                .add('text', 'textB')
+                .add('text', 'textC')
+            )
             .on('show', function () {
                 sitarhero.child('content/github').css('display', 'table');
             })
@@ -66,6 +72,10 @@ sitarhero
                 sitarhero.child('content/github').css('display', 'none');
             })
         )
+    )
+    .add(Block('div', 'copyright')
+        .add('text', 1)
+        .add(Block('break').data(2))
     )
 ;
 
@@ -84,7 +94,7 @@ $(document).ready(function () {
                         content.css({
                             width: '92.6%',
                             borderRadius: '5px',
-                            margin: '40px auto 0 auto'
+                            margin: '40px auto 20px auto'
                         });
                     else content.css({
                         width: '75%',
@@ -111,7 +121,7 @@ $(document).ready(function () {
                 var renderer = new marked.Renderer();
                 content.child('explore').html(marked(data, { renderer: renderer })).css('opacity', '1');
                 sitarhero.fill(document.body);
-                // sitarhero.child('tabs/explore').on('click');
+                sitarhero.child('tabs/explore').on('click', { noscroll: true });
                 document.body.style.opacity = '1';
                 $(window).resize();
                 var index = window.location.href.indexOf('#');

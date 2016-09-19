@@ -28,9 +28,9 @@ sitarhero
             z-index 0
             position relative
         explore
-            val explore
+            val about
         github
-            val github
+            val source
     content
         css
             width 70%
@@ -111,7 +111,22 @@ sitarhero
                 val Sitar Hero was created and is maintained by&nbsp;
             textE
                 html <a href = 'https://github.com/anuvgupta' target = '_blank' style = 'text-decoration: none;'>@anuvgupta</a>
+            footer
+                textA
+                    val Contact&nbsp;
+                textB
+                    html <a href = 'mailto:me@anuv.me'>me@anuv.me</a>
+                textC
+                    val &nbsp;for any issues or questions.
             css
                 width 100%
+                text-align center
+    copyright
+        text
+            val Copyright © 2016 Anuv Gupta. All rights reserved.
+        css
+            width 100%
+            text-align center
+            color #444
     css
         height 100%
