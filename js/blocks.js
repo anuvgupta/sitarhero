@@ -25,7 +25,9 @@ Block('text', function () { //function to create text block
 }, function (block, data) { //function to load data into text block
     var value = data('val'); //get data 'val' (text of span)
     // if val is not null, add text to text block
-    if (value != null) block.node().appendChild(document.createTextNode(value));
+    if (value != null) block.node().appendChild(document.createTextNode(value.replace('&nbsp;', ' ')));
+    var html = data('html');
+    if (html != null) block.html(html);
 });
 
 // define image block
@@ -56,4 +58,43 @@ Block('image', function () { //function to create image block
     else block.css('width', 'auto');
     //if alt is not null, set image div title
     if (alt !== null) block.attribute('title', alt);
+});
+
+Block('tab', function () {
+    var block = Block('block');
+    block.css({
+        width: '180px',
+        display: 'inline-table',
+        font: '18px Arial',
+        backgroundColor: 'rgba(255, 255, 255, 1)',
+        borderRadius: '8px 8px 0 0',
+        border: '1px solid #DDD',
+        borderBottom: 'none',
+        cursor: 'pointer',
+        color: '#4C4C4C',
+        margin: '0',
+        opacity: '0.6'
+    })
+    .add('text', 1)
+    .on('click', function () {
+        var siblings = block.siblings();
+        for (sibling in siblings) {
+            if (siblings.hasOwnProperty(sibling))
+                siblings[sibling].css('opacity', '0.6');
+        }
+        block.css('opacity', '1');
+    });
+    return block;
+}, function (block, data, css) {
+    block.child('text').html(data('val'));
+    block.on('click', function () {
+        var children = block.parent(1).child('content').children();
+        for (child in children) {
+            if (children.hasOwnProperty(child)) {
+                if (child == block.mark())
+                    children[child].on('show');
+                else children[child].on('hide')
+            }
+        }
+    });
 });

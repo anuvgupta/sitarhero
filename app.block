@@ -19,7 +19,7 @@ sitarhero
                 margin-top -40px
                 font 45px myCenturyGothic
                 text-transform lowercase
-    label
+    tabs
         css
             width 100%
             height 70px
@@ -27,30 +27,49 @@ sitarhero
             margin-bottom -50px
             z-index 0
             position relative
-        block
-            css
-                width 200px
-                display inline-table
-                font 20px Arial
-                background-color rgba(255, 255, 255, 1)
-                border-radius 8px 8px 0 0
-                border 1px solid #DDD
-                border-bottom none
-                cursor pointer
-                color #555
-            text
-                val Explore
+        explore
+            val explore
+        github
+            val github
     content
         css
             width 70%
             margin 40px auto
             color #333
-            opacity 0
+            opacity 1
             transition opacity 0.3s ease
             -webkit-transition opacity 0.3s ease
             //background-color #FBFBFB
             background-color rgba(255, 255, 255, 1)
             padding 3.7%
             border-radius 10px
+        github
+            title
+                html <h1>source code</h1>
+            textA
+                val View Sitar Hero source at&nbsp;
+            textB
+                html <a href = 'https://github.com/anuvgupta/sitarhero'>anuvgupta/sitarhero</a>
+            textC
+                val &nbsp;on GitHub
+            buttons
+                block
+                    content
+                        text
+                            val Sitar Hero on GitHub
+                            css
+                                font-weight bold
+                                display block
+                                margin-top -5px
+                                margin-bottom 10px
+                    css
+                        width 40%
+                        background-color rgba(0, 0, 0, 0.02)
+                        border-radius 8px
+                        padding 20px
+                        margin 0 auto
+                        max-width 280px
+            css
+                width 100%
     css
         height 100%
