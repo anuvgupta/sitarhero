@@ -4,7 +4,9 @@
 &nbsp;&nbsp;&nbsp;*Other projects can be found at [anuvgupta/compprog](https://github.com/anuvgupta/compprog)*
 
 ## idea
-I was inspired to design **Sitar Hero** in fourth grade, after my friends and I managed to come up with a plethora of multicultural puns. Sitar Hero being the one I found most compelling, I vowed to one day make a game similar to [Guitar Hero](https://www.guitarhero.com/game), but with the popular Indian instrument, the sitar, instead of the classic Gibson SG modeled guitar. For this project, that is what I originally intended to create; however, synchronizing an audio stream with AWT and JavaX Swing components is in fact quite an unwieldy task. Thus, I decided to make the project more authentic to the concept of *"Sitar Hero"* and have the user feel like he/she/they is/are playing a sitar.
+I was inspired to design **Sitar Hero** in fourth grade, after my friends and I managed to come up with a plethora of multicultural puns. Sitar Hero being the one I found most compelling, I vowed to one day make a game similar to [Guitar Hero](https://www.guitarhero.com/game), but with the popular Indian instrument, the sitar, instead of the classic Gibson SG modeled guitar. For this project, that is what I originally intended to create; however, synchronizing an audio bytestream with the movement of AWT and JavaX Swing components is in fact quite an unwieldy task. Thus, I decided to make the project more authentic to the concept of *"Sitar Hero"* and have the user feel like he/she/they is/are playing a sitar.  
+&nbsp;  
+**Gameplay:**
  - The player must hit notes on the keyboard as they reach the bottom of the screen
     - If a note is missed, the reaction box will flash red and a kick drum sound will play
     - If a note is hit, the reaction box will flash green and the correct sitar note will play
