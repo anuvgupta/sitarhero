@@ -1,4 +1,4 @@
-# sitarhero
+# sitar hero
 &nbsp;Music/video game using Java and MIDI Sitar  
 &nbsp;&nbsp;&nbsp;*Final project for my Computer Programming class*  
 &nbsp;&nbsp;&nbsp;*Other projects can be found at [anuvgupta/compprog](https://github.com/anuvgupta/compprog)*
