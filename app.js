@@ -34,7 +34,27 @@ sitarhero
             .add(Block('break').data(2))
             .add(Block('block', 'buttons')
                 .add(Block('block', 1)
+                    .add(Block('a', 'link')
+                        .add('image', 1)
+                    )
                     .add(Block('div', 'content')
+                        .add('text', 1)
+                    )
+                )
+            )
+            .add(Block('break').data(2))
+            .add('text', 'textD')
+            .add('text', 'textE')
+            .add(Block('break').data(2))
+            .add(Block('block', 'author')
+                .add(Block('block', 1)
+                    .add(Block('a', 'link')
+                        .add('image', 1)
+                    )
+                    .add(Block('div', 'content')
+                        .add('text', 1)
+                    )
+                    .add(Block('div', 'follow')
                         .add('text', 1)
                     )
                 )
@@ -83,7 +103,7 @@ $(document).ready(function () {
                         screenshot.css('width', 'auto');
                         sitarhero.child('intro/title').css({
                             'font-size': '120px',
-                            'margin-bottom': '10px'
+                            'margin-bottom': '20px'
                         });
                         for (tab in tabs) tabs[tab].on('big');
                     }
@@ -113,6 +133,9 @@ $(document).ready(function () {
                     .html('<a class="github-button" href="https://github.com/anuvgupta/sitarhero" data-icon="octicon-star" data-style="mega" data-count-href="/anuvgupta/sitarhero/stargazers" data-count-api="/repos/anuvgupta/sitarhero#stargazers_count" data-count-aria-label="# stargazers on GitHub" aria-label="Star anuvgupta/sitarhero on GitHub">Star</a><br/>', true)
                     .html('<a class="github-button" href="https://github.com/anuvgupta/sitarhero/fork" data-icon="octicon-repo-forked" data-style="mega" data-count-href="/anuvgupta/sitarhero/network" data-count-api="/repos/anuvgupta/sitarhero#forks_count" data-count-aria-label="# forks on GitHub" aria-label="Fork anuvgupta/sitarhero on GitHub">Fork</a><br/>', true)
                     .html('<a class="github-button" href="https://github.com/anuvgupta/sitarhero" data-icon="octicon-eye" data-style="mega" data-count-href="/anuvgupta/sitarhero/watchers" data-count-api="/repos/anuvgupta/sitarhero#subscribers_count" data-count-aria-label="# watchers on GitHub" aria-label="Watch anuvgupta/sitarhero on GitHub">Watch</a><br/>', true)
+                ;
+                sitarhero.child('content/github/author/block/follow')
+                    .html('<a class="github-button" href="https://github.com/anuvgupta" data-style="mega" data-count-href="/anuvgupta/followers" data-count-api="/users/anuvgupta#followers" data-count-aria-label="# followers on GitHub" aria-label="Follow @anuvgupta on GitHub">Follow Me</a>', true)
                 ;
             }
         })

@@ -49,11 +49,20 @@ sitarhero
             textA
                 val View Sitar Hero source at&nbsp;
             textB
-                html <a href = 'https://github.com/anuvgupta/sitarhero'>anuvgupta/sitarhero</a>
+                html <a href = 'https://github.com/anuvgupta/sitarhero' target = '_blank'>anuvgupta/sitarhero</a>
             textC
                 val &nbsp;on GitHub
             buttons
                 block
+                    link
+                        href https://github.com/anuvgupta/sitarhero
+                        target _blank
+                        image
+                            src img/GitHub-Mark-120px-plus.png
+                            height 80px
+                            width 80px
+                            css
+                                margin 0 auto 15px auto
                     content
                         text
                             val Sitar Hero on GitHub
@@ -61,7 +70,7 @@ sitarhero
                                 font-weight bold
                                 display block
                                 margin-top -5px
-                                margin-bottom 10px
+                                margin-bottom 20px
                     css
                         width 40%
                         background-color rgba(0, 0, 0, 0.03)
@@ -69,6 +78,39 @@ sitarhero
                         padding 20px
                         margin 0 auto
                         max-width 280px
+            author
+                block
+                    link
+                        href http://anuv.me
+                        target _blank
+                        image
+                            src img/anuvgupta.png
+                            height 150px
+                            width 150px
+                            css
+                                margin 0 auto 15px auto
+                    content
+                        text
+                            val anuv gupta
+                            css
+                                font 35px myCenturyGothic
+                                color rgba(0, 0, 0, 0.8)
+                                display block
+                                margin-top -5px
+                    follow
+                        css
+                            margin-top 10px
+                    css
+                        width 40%
+                        background-color rgba(0, 0, 0, 0.03)
+                        border-radius 8px
+                        padding 20px
+                        margin 0 auto
+                        max-width 280px
+            textD
+                val Sitar Hero was created and is maintained by&nbsp;
+            textE
+                html <a href = 'https://github.com/anuvgupta' target = '_blank' style = 'text-decoration: none;'>@anuvgupta</a>
             css
                 width 100%
     css
