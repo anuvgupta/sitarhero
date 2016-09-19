@@ -72,12 +72,13 @@ sitarhero
                                 margin-top -5px
                                 margin-bottom 20px
                     css
-                        width 40%
                         background-color rgba(0, 0, 0, 0.03)
                         border-radius 8px
                         padding 20px
                         margin 0 auto
+                        min-width 220px
                         max-width 280px
+                        width 40%
             author
                 block
                     link
@@ -101,12 +102,13 @@ sitarhero
                         css
                             margin-top 10px
                     css
-                        width 40%
                         background-color rgba(0, 0, 0, 0.03)
                         border-radius 8px
                         padding 20px
                         margin 0 auto
+                        min-width 220px
                         max-width 280px
+                        width 40%
             textD
                 val Sitar Hero was created and is maintained by&nbsp;
             textE
