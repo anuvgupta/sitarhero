@@ -64,7 +64,7 @@ sitarhero
                                 margin-bottom 10px
                     css
                         width 40%
-                        background-color rgba(0, 0, 0, 0.02)
+                        background-color rgba(0, 0, 0, 0.03)
                         border-radius 8px
                         padding 20px
                         margin 0 auto
