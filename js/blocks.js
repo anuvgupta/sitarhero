@@ -63,7 +63,7 @@ Block('image', function () { //function to create image block
 Block('tab', function () {
     var block = Block('block');
     block.css({
-        width: '180px',
+        width: '190px',
         display: 'inline-table',
         font: '18px Arial',
         backgroundColor: 'rgba(255, 255, 255, 1)',
@@ -96,5 +96,9 @@ Block('tab', function () {
                 else children[child].on('hide')
             }
         }
+    }).on('small', function () {
+        block.css('width', '150px');
+    }).on('big', function () {
+        block.css('width', '190px');
     });
 });

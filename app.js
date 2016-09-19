@@ -71,9 +71,22 @@ $(document).ready(function () {
                         borderRadius: '10px',
                         margin: '40px auto'
                     });
-                    if (window.innerWidth < 550)
+                    var tabs = sitarhero.child('tabs').children();
+                    if (window.innerWidth < 550) {
                         screenshot.css('width', '95%');
-                    else screenshot.css('width', 'auto');
+                        sitarhero.child('intro/title').css({
+                            'font-size': '100px',
+                            'margin-bottom': '30px'
+                        });
+                        for (tab in tabs) tabs[tab].on('small');
+                    } else {
+                        screenshot.css('width', 'auto');
+                        sitarhero.child('intro/title').css({
+                            'font-size': '120px',
+                            'margin-bottom': '10px'
+                        });
+                        for (tab in tabs) tabs[tab].on('big');
+                    }
                 });
                 var renderer = new marked.Renderer();
                 content.child('explore').html(marked(data, { renderer: renderer })).css('opacity', '1');
