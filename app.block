@@ -29,8 +29,10 @@ sitarhero
             position relative
         explore
             val about
+            id about
         github
             val source
+            id source
     content
         css
             width 70%
@@ -45,6 +47,7 @@ sitarhero
             border-radius 10px
         github
             title
+                id source-code
                 html <h1>source code</h1>
             textA
                 val View Sitar Hero source at&nbsp;
