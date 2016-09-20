@@ -124,8 +124,10 @@ sitarhero
                 width 100%
                 text-align center
     copyright
-        text
-            val Copyright © 2016 Anuv Gupta. All rights reserved.
+        textA
+            val Copyright ©&nbsp;
+        textB
+            val &nbsp;Anuv Gupta. All rights reserved.
         css
             width 100%
             text-align center

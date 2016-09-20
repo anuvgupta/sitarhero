@@ -74,7 +74,9 @@ sitarhero
         )
     )
     .add(Block('div', 'copyright')
-        .add('text', 1)
+        .add('text', 'textA')
+        .add(Block('text', 'year').data((new Date()).getFullYear().toString()))
+        .add('text', 'textB')
         .add(Block('break').data(2))
     )
 ;
@@ -123,6 +125,10 @@ $(document).ready(function () {
                 sitarhero.fill(document.body);
                 sitarhero.child('tabs/explore').on('click', { noscroll: true });
                 document.body.style.opacity = '1';
+                $("a[href='http://anuv.me/sitarhero']").parent().contents().filter(function() {
+                    return this.nodeType == 3;
+                }).last().remove();
+                $("a[href='http://anuv.me/sitarhero']").remove();
                 $(window).resize();
                 var index = window.location.href.indexOf('#');
                 if (index != -1) {

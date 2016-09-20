@@ -1,6 +1,15 @@
 @font-face {
     font-family: myCenturyGothic;
-    src: url("http://anuv.me/pocketjs/fonts/centurygothic.ttf");
+    src: url('fonts/centurygothic.ttf');
+}
+
+::selection {
+    background-color: #969696;
+    color: #EEE;
+}
+::-moz-selection {
+    background-color: #969696;
+    color: #EEE;
 }
 
 * {
