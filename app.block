@@ -112,7 +112,7 @@ sitarhero
             textD
                 val Sitar Hero was created and is maintained by&nbsp;
             textE
-                html <a href = 'https://github.com/anuvgupta' target = '_blank' style = 'text-decoration: none;'>@anuvgupta</a>
+                html <a href = 'https://github.com/anuvgupta' target = '_blank' style = 'text-decoration: none;'>@anuvgupta</a> on Github
             footer
                 textA
                     val Contact&nbsp;

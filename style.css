@@ -51,3 +51,7 @@ code {
 h1 {
     text-align: center;
 }
+
+h1[id='sitar-hero'] {
+    text-align: inherit;
+}

@@ -105,7 +105,7 @@ $(document).ready(function () {
                     });
                     var tabs = sitarhero.child('tabs').children();
                     if (window.innerWidth < 550) {
-                        screenshot.css('width', '95%');
+                        screenshot.css('width', '100%');
                         sitarhero.child('intro/title').css({
                             'font-size': '100px',
                             'margin-bottom': '30px'
