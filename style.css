@@ -36,6 +36,9 @@ a {
     text-align: center;
     text-decoration: none;
 }
+a:hover {
+    text-decoration: underline;
+}
 
 h1, h2 {
     border-bottom: 1px solid #EDEDED;
