@@ -3,15 +3,6 @@
     src: url('fonts/centurygothic.ttf');
 }
 
-::selection {
-    background-color: #969696;
-    color: #EEE;
-}
-::-moz-selection {
-    background-color: #969696;
-    color: #EEE;
-}
-
 * {
     line-height: 1.5;
 }
