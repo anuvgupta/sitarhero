@@ -29,10 +29,10 @@ sitarhero
             position relative
         explore
             val about
-            id about
+            //id about
         github
             val source
-            id source
+            //id source
     content
         css
             width 70%

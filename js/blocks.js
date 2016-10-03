@@ -73,7 +73,8 @@ Block('tab', function () {
         cursor: 'pointer',
         color: '#4C4C4C',
         margin: '0 0.5px',
-        opacity: '0.6'
+        opacity: '0.6',
+        transition: 'width 0.2s ease'
     })
     .add('text', 1)
     .on('click', function () {
@@ -90,10 +91,15 @@ Block('tab', function () {
             border: '1px solid #DDD',
             borderBottom: 'none'
         });
+
+        var val = block.key('val');
+        if (val != 'about') window.location.hash = '#' + val;
+        else window.location.hash = '';
     });
     return block;
 }, function (block, data, css) {
-    block.child('text').html(data('val'));
+    var val = data('val');
+    block.key('val', val).child('text').html(val);
     block.on('click', function () {
         var children = block.parent(1).child('content').children();
         for (child in children) {
