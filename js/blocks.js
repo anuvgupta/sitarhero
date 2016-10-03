@@ -77,7 +77,7 @@ Block('tab', function () {
         transition: 'width 0.2s ease'
     })
     .add('text', 1)
-    .on('click', function () {
+    .on('click', function (e) {
         var siblings = block.siblings();
         for (sibling in siblings) {
             if (siblings.hasOwnProperty(sibling))
@@ -93,7 +93,7 @@ Block('tab', function () {
         });
 
         var val = block.key('val');
-        if (window.location.hash == '' && val != 'about')
+        if (!e.detail.noscroll)
             window.location.hash = '#' + val;
     });
     return block;
