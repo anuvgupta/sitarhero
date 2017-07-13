@@ -2,7 +2,7 @@
 &nbsp;Music/video game using Java and MIDI Sitar  
 &nbsp;&nbsp;&nbsp;*Final project for my Computer Programming class*  
 &nbsp;&nbsp;&nbsp;*Other projects can be found at [anuvgupta/compprog](https://github.com/anuvgupta/compprog)*  
-Visit [anuv.me/sitarhero](http://anuv.me/sitarhero)
+Visit [github.anuv.me/sitarhero](http://github.anuv.me/sitarhero)
 
 ## idea
 I was inspired to design **Sitar Hero** in fourth grade, after my friends and I managed to come up with a plethora of multicultural puns. Finding "Sitar Hero" the most compelling, I vowed to one day make a game similar to [Guitar Hero](https://www.guitarhero.com/game), but with the popular Indian instrument, the sitar, instead of the classic Gibson SG modeled guitar. For this project, that is what I originally intended to create; however, synchronizing an audio bytestream with the movement of AWT and JavaX Swing components is in fact quite an unwieldy task. Thus, I decided to make the project more authentic to the concept of *"Sitar Hero"* and have the user feel like he/she/they is/are playing a sitar.  
@@ -20,7 +20,7 @@ I was inspired to design **Sitar Hero** in fourth grade, after my friends and I 
  - After three songs, game won!
 
 ## screenshot
-![Sitar Hero Screenshot](http://anuv.me/sitarhero/img/screenshot.png)
+![Sitar Hero Screenshot](http://github.anuv.me/sitarhero/img/screenshot.png)
 
 ## instructions
  1. Install [Java 8](http://www.oracle.com/technetwork/java/javase/downloads/index.html)
