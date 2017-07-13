@@ -1,6 +1,6 @@
 # sitarhero pages
 Project website for [sitarhero](https://github.com/anuvgupta/sitarhero)  
-&nbsp;&nbsp;*Check it out at [anuv.me/sitarhero](http://anuv.me/sitarhero)*  
+&nbsp;&nbsp;*Check it out at [github.anuv.me/sitarhero](http://github.anuv.me/sitarhero)*  
 &nbsp;    
 Libraries Used  
 &nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;[jQuery](https://jquery.com/) - v1.12.4  
