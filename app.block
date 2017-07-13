@@ -88,19 +88,22 @@ sitarhero
                         href http://anuv.me
                         target _blank
                         image
-                            src img/anuvgupta.png
-                            height 150px
-                            width 150px
+                            src http://anuv.me/img/profile-current.png
+                            height 120px
+                            width 120px
                             css
+                                border-radius 100%
                                 margin 0 auto 15px auto
                     content
                         text
-                            val anuv gupta
+                            val anuv
                             css
-                                font 35px myCenturyGothic
-                                color rgba(0, 0, 0, 0.8)
+                                font 35px Source Sans Pro
+                                color rgb(75, 75, 75)
                                 display block
                                 margin-top -5px
+                                text-transform uppercase
+                                letter-spacing 8px
                     follow
                         css
                             margin-top 10px
