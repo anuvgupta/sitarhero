@@ -1,5 +1,5 @@
 # sitar hero
-SFHS Computer Science — Music video game in Java using MIDI Sitar
+SFHS Computer Science — Music video game in Java using MIDI Sitar  
 *Final project for my Computer Programming class*  
 
 ## idea
