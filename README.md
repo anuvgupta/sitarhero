@@ -1,5 +1,5 @@
 # sitar hero
-Music/video game using Java and MIDI Sitar  
+SFHS Computer Science — Music video game in Java using MIDI Sitar
 *Final project for my Computer Programming class*  
 
 ## idea
@@ -59,3 +59,7 @@ View full credits in [`README.TXT`](https://github.com/anuvgupta/sitarhero/blob/
 *Anuv Gupta and Sitar Hero take no credit for and have no association with the legal owners/creators of the above intellectual property (ie. SoundFont, GIF/PNG images, and WAV audio files). All credit belongs to the respectively credited entities, and any other entities that claim valid legal ownership of such property. In addition, Anuv Gupta and Sitar Hero take no credit for and have no association with any entities or property belonging or related to [Guitar Hero](https://www.guitarhero.com/) and [ActiVision](https://www.activision.com/). Any and all similarities or resemblances to the aforementioned entities are completely unintentional and by chance.*  
 &nbsp;  
 For any issues or questions, please contact [me@anuv.me](mailto:me@anuv.me) by email.
+
+
+&nbsp;  
+*2015*
