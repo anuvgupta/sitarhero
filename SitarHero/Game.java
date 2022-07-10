@@ -9,7 +9,7 @@ import javax.swing.SwingConstants;
 import java.util.Timer;
 import java.util.TimerTask;
 import java.util.ArrayList;
-// import java.io and java.imageio classes
+// import java.io and java.ImageIO classes
 import java.io.File;
 import java.io.IOException;
 import javax.imageio.ImageIO;
@@ -27,6 +27,10 @@ import java.awt.event.KeyListener;
 import java.awt.event.KeyEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
+
+import java.io.InputStream;
+import java.io.OutputStream;
+import java.net.URL;
 
 // class Game can be constructed to create main game panel and to collect key events
 // contains main game loop and main game logic
@@ -54,14 +58,15 @@ public class Game extends JPanel implements KeyListener { // declare class game 
     private Timer gameTimer; // util timer that controls gameplay
     private int[] keyCodes; // contains key codes in order of strings
     private String[] songs; // contains titles of songs to be played
-    private File[] gifs; // contains gif files
+    private URL[] gifs; // contains gif files
 
     public Game() { // constructor for Game
         level = 0; // level 0 is essentially level 1
         keyCodes = keyCodes = new int[] {KeyEvent.VK_A, KeyEvent.VK_S, KeyEvent.VK_D, KeyEvent.VK_F, KeyEvent.VK_G, KeyEvent.VK_H}; // initialize key codes
         String[] names = new String[] {"shrek", "saxroll", "dancing", "rickroll"}; // initialize names of gifs
-        gifs = new File[names.length]; // initialize array of files for gifs
-        for (int i = 0; i < names.length; i++) gifs[i] = Files.getFile(this, "files/sitar/" + names[i] + ".gif"); // initialize files for gifs
+        gifs = new URL[names.length]; // initialize array of files for gifs
+        for (int i = 0; i < names.length; i++) gifs[i] = Game.class.getClassLoader().getResource("files/sitar/" + names[i] + ".gif"); // initialize files for gifs
+        // Game.class.getClass().getResource(path)
         songs = new String[] {"levels", "saymyname", "rickroll"}; // initialize titles of songs
         setSong(new Song(songs[level])); // initialize current song data
         setComponents(); // initialize UI
@@ -76,7 +81,7 @@ public class Game extends JPanel implements KeyListener { // declare class game 
 
         noteClick = 0; // set note counter to 0
         score = 0; // start with 0 for score
-        lives = 25; // start with 25 lives
+        lives = 50; // start with 25 lives
         notes = new ArrayList<ArrayList<Note>>(); // initialize outer note list list
         for(int i = 0; i < 6; i++) notes.add(new ArrayList<Note>()); // initialize 6 inner note lists (one for each string)
     }
@@ -124,7 +129,11 @@ public class Game extends JPanel implements KeyListener { // declare class game 
         finishPTop.setBackground(new Color(0, 0, 0, 0));
         finishPTop.add(finishL1);
         // create gif label
-        finishImg = new JLabel((Icon) new ImageIcon(gifs[0].getPath()));
+        try {
+            finishImg = new JLabel((Icon) new ImageIcon(gifs[0]));
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
         finishImg.setBackground(new Color(0, 0, 0, 0));
         // create secondary game end label
         Font finishFont2 = new Font("Helvetica", Font.PLAIN, 36);
@@ -145,7 +154,7 @@ public class Game extends JPanel implements KeyListener { // declare class game 
         // create background image
         BufferedImage img = null; // initialize img to null to avoid compiler errors
         try { // try block for buffering images without crashing
-            img = ImageIO.read(Files.getFile(this, "files/sitar/sitar.png")); // use static read() method from ImageIO class to load an image into img
+            img = ImageIO.read(Game.class.getClassLoader().getResourceAsStream("files/sitar/sitar.png")); // use static read() method from ImageIO class to load an image into img
         } catch (IOException e) { // catch block to recieve potential errors thrown by image buffering
             e.printStackTrace(); // print errors, if caught
         }
@@ -220,7 +229,11 @@ public class Game extends JPanel implements KeyListener { // declare class game 
                                     if (lives <= 0) { // if the player is out of lives
                                         sitar.kick(); // make kick sound with sitar soundmaker
                                         // set gif to shrek losing gif
-                                        finishImg.setIcon((Icon) new ImageIcon(gifs[0].getPath()));
+                                        try {
+                                            finishImg.setIcon((Icon) new ImageIcon(gifs[0]));
+                                        } catch (Exception e) {
+                                            e.printStackTrace();
+                                        }
                                         finishImg.setBackground(new Color(0, 0, 0, 0));
                                         gameState = 0; // game is stopped
                                         lives = 0; // reset lives to 0 in case the user went under 0 to the negatives
@@ -269,7 +282,11 @@ public class Game extends JPanel implements KeyListener { // declare class game 
                                 // check for win
                                 if (song.getPercentage(score) >= 80) { // if the player got 80% of notes correct or more
                                     song.playAudio(); // play the song
-                                    finishImg.setIcon((Icon) new ImageIcon(gifs[level + 1].getPath())); // change the gif to gif corresponding to level
+                                    try {
+                                        finishImg.setIcon((Icon) new ImageIcon(gifs[level + 1])); // change the gif to gif corresponding to level
+                                    } catch (Exception e) {
+                                        e.printStackTrace();
+                                    }
                                     if (level == 2) { // if the player is on the last level, display endgame text
                                         finishL1.setText("YOU WON");
                                         finishL2.setText("<html><center>SONG - " + song.getName() + "<br/><br/>PRESS SPACE TO END GAME</center></html>");
@@ -280,7 +297,11 @@ public class Game extends JPanel implements KeyListener { // declare class game 
                                     finishP.setVisible(true); // display the end round panel
                                     gameState = 4; // set the state to win
                                 } else { // if the player did not get 80% of notes correct, at least
-                                    finishImg.setIcon((Icon) new ImageIcon(gifs[0].getPath())); // set gif to shrek losing gif
+                                    try {
+                                        finishImg.setIcon((Icon) new ImageIcon(gifs[0])); // set gif to shrek losing gif
+                                    } catch (Exception e) {
+                                        e.printStackTrace();
+                                    }
                                     // display lose level text
                                     finishL1.setText("YOU LOST");
                                     finishL2.setText("<html><center>ACCURACY: " + song.getPercentage(score) + "%<br/><br/>PRESS SPACE TO TRY AGAIN</center></html>");

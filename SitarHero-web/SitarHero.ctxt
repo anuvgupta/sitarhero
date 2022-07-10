@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=SitarHero
+comment1.params=
+comment1.target=SitarHero()
+comment2.params=s
+comment2.target=void\ setStage(boolean)
+comment3.params=
+comment3.target=boolean\ getStage()
+numComments=4
