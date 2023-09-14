@@ -1,5 +1,6 @@
 
 //  import javax.swing classes for UI
+
 import javax.swing.JComponent;
 import javax.swing.Timer;
 // import java.awt classes for UI
@@ -37,31 +38,33 @@ public class ReactionRectangle extends JComponent { // declare class ReactionRec
         height = h;
         speed = s;
 
-        t = new Timer(speed/2, null); // initialize swing timer, null action listener added later to reference the timer within its instructions
+        t = new Timer(speed / 2, null); // initialize swing timer, null action listener added later to reference the timer within its instructions
         t.addActionListener(new ActionListener() { // add action listener to the timer
-                public void actionPerformed(ActionEvent e) { // when the timer ticks
-                    if (intensity > 0) { // if the the intensity is more than 0, meaning it has room to decrease
-                        try { // try catch block to prevent errors; all below colors are translucent
-                            if (hit == 1) c = new Color(0, intensity, 0, 140); // if hit represents green, set note color to a more intensely green color
-                            else if (hit == 2) c = new Color(intensity, 0, 0, 140); // if hit represents red, set note color to a more intensely red color
-                            else if (hit == 3) c = new Color(intensity, intensity, intensity, 140); // if hit represents white, set note color to a more intensely white color
-                        }
-                        catch (IllegalArgumentException iae) { // if error is caught, print details
-                            System.out.println(intensity);
-                            System.out.println(c.getGreen() + " " + c.getRed());
-                            iae.printStackTrace();
-                        }
-                        intensity -= speed; // reduce the color intensity by the speed, for the next timer tick, so the color gets darker
-                        repaint(); // repaint the rectangle component
-                    } else { // if the intensity is 0 or less than 0, the rectangle has finished fading
-                        c = new Color(0, 0, 0, 140); // reset the color to translucent black
-                        intensity = 160; // reset the color intensity
-                        hit = 0; // reset hit to 0, no color change
-                        repaint(); // repaint the rectangle component
-                        t.stop(); // stop the timer, the animation is over
+            public void actionPerformed(ActionEvent e) { // when the timer ticks
+                if (intensity > 0) { // if the the intensity is more than 0, meaning it has room to decrease
+                    try { // try catch block to prevent errors; all below colors are translucent
+                        if (hit == 1)
+                            c = new Color(0, intensity, 0, 140); // if hit represents green, set note color to a more intensely green color
+                        else if (hit == 2)
+                            c = new Color(intensity, 0, 0, 140); // if hit represents red, set note color to a more intensely red color
+                        else if (hit == 3)
+                            c = new Color(intensity, intensity, intensity, 140); // if hit represents white, set note color to a more intensely white color
+                    } catch (IllegalArgumentException iae) { // if error is caught, print details
+                        System.out.println(intensity);
+                        System.out.println(c.getGreen() + " " + c.getRed());
+                        iae.printStackTrace();
                     }
+                    intensity -= speed; // reduce the color intensity by the speed, for the next timer tick, so the color gets darker
+                    repaint(); // repaint the rectangle component
+                } else { // if the intensity is 0 or less than 0, the rectangle has finished fading
+                    c = new Color(0, 0, 0, 140); // reset the color to translucent black
+                    intensity = 160; // reset the color intensity
+                    hit = 0; // reset hit to 0, no color change
+                    repaint(); // repaint the rectangle component
+                    t.stop(); // stop the timer, the animation is over
                 }
-            });
+            }
+        });
         setBounds(0, 0, 400, 562); // set bounds so the component appears in absolute positioning
     }
 
